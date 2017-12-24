@@ -14,7 +14,7 @@ router.get('/price', (req, res) => {
 router.get('/faq', (req, res) => {
     res.send('FAQ page');
 });
-router.get('/otzovu', (req, res) => {
+router.post('/otzovu', (req, res) => {
     res.send('Otzovu page');
 });
 router.get('/contacts', (req, res) => {
