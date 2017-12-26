@@ -23,9 +23,12 @@ const calcRouter = require('./routers/calc');
 const adminRouter = require('./routers/admin');
 
 
-const server = express();
+const app = express();
 
-server.use(
+app.set('view engine', 'pug');
+
+
+app.use(
     logger, // потавил самым первым, т.к. в mainRouter страница профиля пользователя
     maintRouter, // просто страницы
     uslugiRouter, // /uslugi - услуши компании
@@ -38,4 +41,5 @@ server.use(
 );
 
 
-server.listen(3000, () => console.log('Express', 3000));
+
+app.listen(3000, () => console.log('Express', 3000));
