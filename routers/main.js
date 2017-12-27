@@ -3,7 +3,7 @@ const { Router } = require('express');
 const router = Router();
 
 router.get('/', (req, res) => {
-    res.render('sayt/temp/main', { title: 'Hello Pug'});
+    res.render('sayt/page/main', { title: 'Hello Pug'});
 });
 router.get('/about', (req, res) => {
     res.send('About page');
