@@ -1,36 +1,13 @@
-const { Router } = require('express');
+const router = require('express').Router();
 
-const router = Router();
+const { main } = require('../controllers');
 
-router.get('/', (req, res) => {
-    res.render('sayt/page/main', { title: 'Hello Pug'});
-});
-router.get('/about', (req, res) => {
-    res.send('About page');
-});
-router.get('/price', (req, res) => {
-    res.send('price page');
-});
-router.get('/faq', (req, res) => {
-    res.send('FAQ page');
-});
-router.post('/otzovu', (req, res) => {
-    res.send('Otzovu page');
-});
-router.get('/contacts', (req, res) => {
-    res.send('Contactu page');
-});
-router.get('/profile', (req, res) => {
-    let user = req.user;   // согласно уроку, тут что-то по логину и паролю из другого маршрута
-    console.log(user);
-
-    res.send('Profile page');
-});
-router.get('/search', (req, res) => {
-    res.send('search page');
-});
-router.get('/404', (req, res) => {
-    res.send('404 page');
-});
+router.get('/', main.showMain);
+router.get('/about', main.showAbout);
+router.get('/price', main.showPrice);
+router.get('/faq', main.showFaq);
+router.get('/otzovu', main.showOtzovu);
+router.get('/contact', main.showContact);
+router.get('/search', main.showSearch);
 
 module.exports = router;

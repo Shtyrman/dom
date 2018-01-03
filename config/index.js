@@ -1,6 +1,20 @@
+//module.exports = {
+//    auth: {
+//        login: 'admin',
+//        password: '12345'
+//    }
+//};
+
+'use srtict';
+
+const path = require('path');
+
 module.exports = {
-    auth: {
-        login: 'admin',
-        password: '12345'
+    version: '1.0.0',
+    port: process.env.PORT || 3000,
+    paths: {
+        views: path.resolve(__dirname, '..', 'views'),
+        public: path.resolve(__dirname, '..', 'public'),
+        lib: path.resolve(__dirname, '..', 'mode_modules')
     }
 };

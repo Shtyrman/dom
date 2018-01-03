@@ -1,1 +1,12 @@
-[{ "title": "test 111111111"}, {"title": "test 2222222222"}]
+[ 
+    { 
+        "title": "t1",
+        "slug": "ydkjs-scope-and-closures",
+        "usluga": "1"
+    }, 
+    { 
+        "title": "t2",
+        "slug": "ydkjs-this-and-object-prototypes",
+        "usluga": "2"
+    }
+]

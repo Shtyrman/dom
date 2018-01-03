@@ -1,15 +1,12 @@
-const express = require('express');
+const router = require('express').Router();
 
-const uslugi = require('../data/uslugi');
+const { usluga: {
+    showAllUslugi,
+    showUslugi
+} };
 
-const router = express.Router();
 
-router.get('/uslugi', (req, res) => {
-    res.send(uslugi);
-});
-
-router.get('/uslugi/:usluga', (req, res) => {
-    res.send(uslugi[0]); 
-});
+router.get('/', showAllUslugi);
+router.get('/:usluga', showUslugi);
 
 module.exports = router;
