@@ -19,7 +19,7 @@ app.use('/lib', express.static(config.paths.lib));
 app.use(logger('dev'));
 
 app.use('/', routers.main);
-app.use('/usluga', routers.uslugi);
+app.use('/uslugi', routers.uslugi);
 //app.use('/items', routers.items);
 //app.use('/blog'. routers.blog);
 //app.use('/card', routers.card);

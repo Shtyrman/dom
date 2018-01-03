@@ -1,9 +1,9 @@
 const router = require('express').Router();
 
-const { usluga: {
+const { uslugi: {
     showAllUslugi,
     showUslugi
-} };
+} } = require('../controllers');
 
 
 router.get('/', showAllUslugi);

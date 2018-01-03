@@ -1,5 +1,3 @@
-module.exports = router;
-
 const usluga = require('../data/uslugi');
 
 module.exports = {
@@ -14,7 +12,7 @@ module.exports = {
     showUslugi(req, res) {
         res.render('sayt/page/main', {
             id: 'usluga',
-            title: req.uslugi.usluga
+            title: req.params.usluga
         });
     }
 };
