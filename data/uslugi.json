@@ -1,12 +1,12 @@
 [ 
     { 
         "title": "t1",
-        "slug": "ydkjs-scope-and-closures",
+        "url": "ydkjs-scope-and-closures",
         "usluga": "1"
     }, 
     { 
         "title": "t2",
-        "slug": "ydkjs-this-and-object-prototypes",
+        "url": "ydkjs-this-and-object-prototypes",
         "usluga": "2"
     }
 ]
