@@ -4,18 +4,18 @@ const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 
 const paths = {
-    vendor: './node_modules',
-    src: './styles',
+    vendor: './node_modules/',
+    src: './styles/',
     dist: './public/css/'
 };
 
 gulp.task('sass', () => {
-    gulp.src('${paths.src}index.sass')
+    gulp.src(`${paths.src}index.sass`)
         .pipe(sass({
             includePaths: [paths.vendor]
         }).on('error', sass.logError))
         .pipe(autoprefixer({
-            browsers: ['last 2 version', 'ie >= 9']
+            browsers: ['last 2 versions', 'ie >= 9']
         }))
         .pipe(rename('app.css'))
         .pipe(gulp.dest(paths.dist));
