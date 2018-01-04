@@ -15,6 +15,6 @@ module.exports = {
     paths: {
         views: path.resolve(__dirname, '..', 'views'),
         public: path.resolve(__dirname, '..', 'public'),
-        lib: path.resolve(__dirname, '..', 'mode_modules')
+        lib: path.resolve(__dirname, '..', 'node_modules')
     }
 };

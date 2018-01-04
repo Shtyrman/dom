@@ -23,7 +23,7 @@ app.use(logger('dev'));
 
 app.use('/', routers.main);
 app.use('/uslugi', routers.uslugi);
-//app.use('/items', routers.items);
+app.use('/allgroup', routers.items);
 //app.use('/blog'. routers.blog);
 //app.use('/card', routers.card);
 //app.use('/calc', routers.calc);

@@ -6,7 +6,7 @@ module.exports = {
         let usluga = uslugi.find(usluga => usluga.url === uslugaUrl);
 
         if (!usluga) {
-            let error = new Error('Книга не найдена');
+            let error = new Error('Ничего нету');
             error.status = 404;
             next(error);
         } else {
