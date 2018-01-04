@@ -1,6 +1,9 @@
 const express = require('express');
 const logger = require('morgan')
 
+const domain = require('domain');
+const appDomain = domain.create();
+
 //const logger = require('./middleware/logger');
 //const auth = require('./middleware/auth');
 const config = require('./config');
@@ -26,8 +29,14 @@ app.use('/uslugi', routers.uslugi);
 //app.use('/calc', routers.calc);
 //app.use('/admin', routers.admin);
 
+appDomain.on('error', function(err) {
+    console.error("Домен перехватил %s", err);
+});
+appDomain.run(function () {
+    app.listen(config.port, () => console.log('Express:', config.port));
+});
 
-app.listen(config.port, () => console.log('Express:', config.port));
+
 
 
 
