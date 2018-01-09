@@ -15,7 +15,7 @@ module.exports = {
             next();
         }
     },
-    // GET /allgroup
+    // GET /groups
     showAllGroups(req, res) {
         res.render('sayt/page/main', {
             id: 'allgroup',
@@ -34,9 +34,9 @@ module.exports = {
             group, itemsByGroup
         });
     },
-    // GET /allgroup/:group/:item
+    // GET /groups/:group/:item
     showItem(req, res) {
-        console.log(req.query.type)
+        console.log(req.query.type)  ///groups/moe/steklo?type=red
         res.render('sayt/page/main', {
             id: 'itemId',
             title: req.item.title,
