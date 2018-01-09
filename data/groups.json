@@ -1,0 +1,18 @@
+[
+    {
+        "id" : "1",
+        "title" : "Kupit furnituru",
+        "groups": "furnitura",
+        "group": "furnitura",
+        "description" : "",
+        "slug": "moe"
+    },
+    {
+        "id" : "2",
+        "title" : "Kupit steklo",
+        "groups": "steklo",
+        "group": "steklo",
+        "description" : "",
+        "slug": "ne-moe"
+    }
+]

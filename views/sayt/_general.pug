@@ -10,7 +10,9 @@ html(lang="ru" itemscope="")(itemtype= typeSite)
             block header
                 include ./chunk/header
         main
-            block content
+            .container
+             include ./chunk/sidemenu
+             block content
         footer
             include ./chunk/footer
 
