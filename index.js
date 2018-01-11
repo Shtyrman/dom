@@ -11,6 +11,8 @@ const routers = require('./routers');
 
 const app = express();
 
+
+app.set('x-powered-by', false);
 app.set('view engine', 'pug');
 app.set('views', config.paths.views);
 
@@ -21,6 +23,10 @@ app.use('/lib', express.static(config.paths.lib));
 
 app.use(logger('dev'));
 
+
+app.use(/^(.*?[^\/]+)$/, function (req, res) {
+    res.redirect(301, req.params[0] + '/')
+});
 app.use('/', routers.main);
 app.use('/uslugi', routers.uslugi);
 app.use('/groups', routers.items);

@@ -4,7 +4,7 @@
         "title" : "Kupit furnituru",
         "groups": "furnitura",
         "group": "furnitura",
-        "description" : "",
+        "description" : "opisanie 1",
         "slug": "moe"
     },
     {
@@ -12,7 +12,7 @@
         "title" : "Kupit steklo",
         "groups": "steklo",
         "group": "steklo",
-        "description" : "",
+        "description" : "opisanie 2",
         "slug": "ne-moe"
     }
 ]

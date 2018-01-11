@@ -11,8 +11,11 @@ html(lang="ru" itemscope="")(itemtype= typeSite)
                 include ./chunk/header
         main
             .container
-             include ./chunk/sidemenu
-             block content
+             .row.pt
+              div.col-3
+               include ./chunk/sidemenu
+              div.col-9
+               block content
         footer
             include ./chunk/footer
 

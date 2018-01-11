@@ -17,7 +17,7 @@ module.exports = {
     },
     // GET /groups
     showAllGroups(req, res) {
-        res.render('sayt/page/main', {
+        res.render('sayt/page/groups', {
             id: 'allgroup',
             title: 'Все группы',
             groups
