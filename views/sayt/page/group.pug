@@ -1,0 +1,9 @@
+extends ../_general
+block html
+
+include ../mixins/items-card
+
+block content
+    h1= title
+    for items in itemsByGroup
+        +items-card(items)

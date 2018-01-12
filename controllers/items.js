@@ -28,7 +28,7 @@ module.exports = {
         let group = groups.find(group => group.slug == req.params.groupSlug)
         let itemsByGroup = items.filter(item => item.groupId == group.id);
         
-        res.render('sayt/page/main', {
+        res.render('sayt/page/group', {
             id: 'Groups',
             title: `Товары по ${group.title}`,
             group, itemsByGroup

@@ -4,13 +4,17 @@
         "groupId": "1", 
         "product": "test1", 
         "slug": "steklo",
-        "item": "steklo 123"
+        "item": "steklo 123",
+        "title": "stekl-o 123",
+        "description": "stekl-o stekl-o stekl-o"
     }, 
     { 
         "id": "321",
         "groupId": "2", 
         "product": "test2", 
         "slug": "ne-steklo",
-        "itemName" : "furnitura 123"
+        "itemName" : "furnitura 123",
+        "title": "furnitur-a 123",
+        "description": "furnitur-a furnitur-a furnitur-a"
     }
 ]

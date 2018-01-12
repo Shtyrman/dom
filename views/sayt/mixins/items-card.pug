@@ -1,0 +1,6 @@
+mixin items-card(items)
+ .card
+    .card-block
+        h4.card-title= items.title
+        p.card-text= items.description
+        a.btn.btn-primary(href!= `${group.slug}/${items.slug}`) Go somewhere

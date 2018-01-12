@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router({ strict: true, mergeParams: true, caseSensitive: true });
 
 const { items } = require('../controllers');
 

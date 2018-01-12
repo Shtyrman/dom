@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router({ strict: true, caseSensitive: true });
 
 const { uslugi: {
     findUsluga,
@@ -8,6 +8,6 @@ const { uslugi: {
 
 
 router.get('/', showAllUslugi);
-router.get('/:usluga', findUsluga, showUslugi);
+router.get('/:usluga/', findUsluga, showUslugi);
 
 module.exports = router;

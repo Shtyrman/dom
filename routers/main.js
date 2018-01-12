@@ -1,4 +1,4 @@
-const router = require('express').Router();
+const router = require('express').Router({ strict: true, caseSensitive: true });
 
 const { main } = require('../controllers');
 

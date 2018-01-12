@@ -1,0 +1,6 @@
+mixin groups-card(groups)
+ .card
+    .card-block
+        h4.card-title= groups.title
+        p.card-text= groups.description
+        a.btn.btn-primary(href!= `/groups/${groups.slug}`) Go somewhere

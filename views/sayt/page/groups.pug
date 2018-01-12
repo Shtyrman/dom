@@ -1,11 +1,12 @@
 extends ../_general
 block html
+ - var typeSite = "http://schema.org/WebPage";
 
-include ../mixins/group-card
+include ../mixins/groups-card
 
 block content
     for group in groups
-        +group-card(group)
+        +groups-card(group)
 
 
 
