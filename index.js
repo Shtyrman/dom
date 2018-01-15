@@ -1,7 +1,8 @@
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
-
+const helmet = require('helmet');
+const frameguard = require('frameguard')
 // const domain = require('domain');
 // const appDomain = domain.create();
 
@@ -15,6 +16,11 @@ const app = express();
 
 app.set('view engine', 'pug');
 app.set('views', config.paths.views);
+
+app.use(helmet.hidePoweredBy());
+app.use(helmet.noSniff());
+app.use(frameguard({ action: 'deny' }));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
